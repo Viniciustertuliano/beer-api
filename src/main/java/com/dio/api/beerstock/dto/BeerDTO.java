@@ -1,11 +1,10 @@
 package com.dio.api.beerstock.dto;
 
-
+import com.dio.api.beerstock.enums.BeerType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import com.dio.api.beerstock.enums.BeerType;
 
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -30,7 +29,7 @@ public class BeerDTO {
     private String brand;
 
     @NotNull
-    @Max(500)
+    @Max(50)
     private Integer max;
 
     @NotNull
